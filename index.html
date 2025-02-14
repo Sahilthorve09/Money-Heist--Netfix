@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Money Heist | Netflix Official Site</title>
+    <link rel="icon" type="image/png" href="./Image/netflix.webp"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="updateEpisodes()">
+
+    <img src="./Image/lo.webp" alt="Round Icon" class="fixed-circle-img">
+
+    <nav>
+        <div>
+            <img src="https://www.pngplay.com/wp-content/uploads/13/Money-Heist-Logo-Download-Free-PNG.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trailers">Trailers</a></li>
+            <li><a href="#season">Episodes</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <!----------Hero Section----------->
+
+    <div class="herosection" id="home">
+        <div class="poster">
+            <div class="container1">
+                <img class="name"
+                    src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRYwssiYqFQk0AMTz6Sk2gJcynwEXm7Z63r-s6aIkwDimtUWoZefgzIsMjMumecjIZWEPE8uoixk_-Acjx57MGODKOw9AGpXTDdPwzwBjSTR2U4COxyFlrtRISIBmHYYtyuEUIvm__G6eMlm0HfP2gEJeq6LnU5O8cdpioXzGlMxJWq1c-qikw.png?r=768"
+                    alt="nameplate"><br><br><br>
+                <h1 class="title">Money Heist</h1><br>
+                <p class="details">2017 | A | 5 Seasons | Thriller</p>
+                <p class="description">
+                    Eight thieves take hostages and lock themselves in the Royal Mint of <br>Spain as a criminal mastermind manipulates the police to carry out <br>his plan.
+                </p>
+                <p class="details">Starring: Úrsula Corberó, Álvaro Morte, Itziar Ituño</p>
+                <p class="details">Creators: Álex Pina</p>
+            </div>
+        </div>
+    </div>
+
+    <!--video-->
+    <div class="vr" id="trailers">
+        <div class="video-container">
+            <h2 class="vid">Videos <span>| Money Heist</span></h2>
+            <div class="slider-wrapper">
+                <button class="prev">&#10094;</button>
+                <div class="slider">
+                    <div class="slide">
+                        <video src="./video/trailor2.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Money Heist Series Trailer - Netflix</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor1.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Money Heist Part 5 Vol. 2 हिन्दी ट्रेलर</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor3.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Money Heist Part 4 - Netflix</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor4.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Money Heist Part 3 - Netflix</p>
+                    </div>
+                    <div class="slide">
+                        <video src="./video/trailor5.mp4"></video>
+                        <button class="play-pause">&#9658;</button>
+                        <p>Money Heist Part 2 - Netflix</p>
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Exploring things-->
+
+    <div class="explore" >
+        <h2>Episodes <span>| Money Heist</span></h2>
+        <label for="season"></label><br>
+        <select id="season" onchange="updateEpisodes()">
+            <option value="1" selected>Season 1</option>
+            <option value="2">Season 2</option>
+            <option value="3">Season 3</option>
+            <option value="4">Season 4</option>
+            <option value="5">Season 5</option>
+        </select>
+        <div id="episodes"></div>
+    </div>
+
+<!--More Detaile about cast-->
+<div class="detail">
+    <h2 class="head-cast">More Details</h2>
+    <div class="detail-container">
+        <div class="column">
+            <h3>Watch offline</h3>
+            <p>Download and watch everywhere you go.</p>
+            <h3>Cast</h3>
+            <div class="cast-list">
+                <p>
+                    Úrsula Corberó<br>
+                    Miguel Herrán<br>
+                    Hovik Keuchkerian<br>
+                    Rodrigo de la Serna<br>
+                    Antonio Romero<br>
+                    Alba Flores<br>
+                    Miguel Ángel Silvestre<br>
+                    María Pedraza
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Genres</h3>
+            <div class="genre-list">
+                <p>Spanish, Crime TV Shows, TV Thrillers</p>
+            </div>
+            <div class="cast-list">
+                <p>
+                    Álvaro Morte<br>
+                    Jaime Lorente<br>
+                    Luka Peroš<br>
+                    Najwa Nimri<br>
+                    Mikel Bustamante<br>
+                    Enrique Arce<br>
+                    Paco Tous
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>This show is...</h3>
+            <p>Suspenseful, Exciting</p>
+            <div class="cast-list">
+                <p>
+                    Itziar Ituño<br>
+                    Esther Acebo<br>
+                    Belén Cuesta<br>
+                    Fernando Soto<br>
+                    José Manuel Seda<br>
+                    Patrick Criado<br>
+                    José Manuel Poga
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <h3>About Money Heist</h3>
+            <p>Go behind the scenes and learn more on <a href="https://www.tudum.com">Tudum.com</a></p>
+            <div class="cast-list">
+                <p>
+                    Pedro Alonso<br>
+                    Darko Perić<br>
+                    Fernando Cayo<br>
+                    Mario de la Rosa<br>
+                    Ramón Agirre<br>
+                    Diana Gómez<br>
+                    Kiti Mánver
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h3>Made with ❤ by <a href="https://www.linkedin.com/in/sahil-thorve-6b1429258/" target="_blank">Sahil Thorve</a></h3>
+</footer>
+<!----------Loading----------->
+
+<div class="loading-screen">
+    <video class="loading-video" autoplay muted playsinline>
+        <source src="./video/logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
